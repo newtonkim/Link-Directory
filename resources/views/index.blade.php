@@ -13,26 +13,25 @@
     <table class="table table-striped">
     <thead>
       <tr>
-        <th>ID</th>
         <th>Title</th>
         <th>Url</th>
         <th>Description</th>
-        
+
         <th colspan="2">Action</th>
       </tr>
     </thead>
     <tbody>
-      
+
       @foreach($links as $link)
-      
+
       <tr>
         <td>{{$link['id']}}</td>
         <td>{{$link['title']}}</td>
-      
+
         <td>{{$link['url']}}</td>
         <td>{{$link['description']}}</td>
-        
-        
+
+
         <td><a href="{{action('LinkController@edit', $link['id'])}}" class="btn btn-warning">Edit</a></td>
         <td>
           <form action="{{action('LinkController@destroy', $link['id'])}}" method="post">
