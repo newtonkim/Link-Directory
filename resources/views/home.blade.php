@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in the link App!
                 </div>
                 <div><a class="btn btn-primary" href="http://localhost:8000/create" role="button">Add Link Directory</a>
                     </div>
