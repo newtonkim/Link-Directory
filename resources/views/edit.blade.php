@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <h2>Edit Link Directory</h2><br  />
+      <h2>Edit Link Directory Page</h2><br  />
         <form method="post" action="{{action('LinkController@update', $id)}}">
         @csrf
         <input name="_method" type="hidden" value="PATCH">
@@ -33,7 +33,7 @@
               <input type="text" class="form-control" name="description" value="{{$link->description}}">
             </div>
           </div>
-       
+
         <div class="row">
           <div class="col-md-4"></div>
           <div class="form-group col-md-4" style="margin-top:60px">
